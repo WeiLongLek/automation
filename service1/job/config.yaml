@@ -11,3 +11,9 @@ actions:
           - echo
         args:
           - 'Hello Team B'
+      - name: "Say Hello World Again"
+        image: "alpine"
+        cmd:
+          - echo
+        args:
+          - 'Hello Team A'
