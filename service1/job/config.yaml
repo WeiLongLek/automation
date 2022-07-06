@@ -10,10 +10,9 @@ actions:
         files:
           - /job/helloWorld.sh
         cmd:
-          - sh
+          - /bin/sh
         args:
           - -c
           - |
             "chmod 777 /keptn/job/helloWorld.sh"
             "/keptn/job/helloWorld.sh"
-          
