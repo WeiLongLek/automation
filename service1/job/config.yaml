@@ -13,4 +13,13 @@ actions:
           - sh
         args:
           - "/keptn/job/helloWorld.sh"
-
+  - name: "Run alpine image to say hello world S2"
+    events:
+      - name: "sh.keptn.event.saygoodbye.triggered"
+    tasks:
+      - name: "Say Bye World"
+        image: "alpine"
+        cmd:
+          - echo
+        args:
+          - 'Goodbye, world!'
