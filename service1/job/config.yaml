@@ -25,4 +25,4 @@ actions:
           - sh
         args:
           - -c
-          - "./helloWorld.sh"
+          - "/keptn/job/helloWorld.sh"
