@@ -5,18 +5,13 @@ actions:
     events:
       - name: "sh.keptn.event.sayhello.triggered"
     tasks:
-      - name: "Say Hello World"
+      - name: "Run as different user"
         image: "alpine"
+        securityContext:
+          runAsUser: 7000
+          runAsGroup: 9000
         cmd:
-          - echo
-        args:
-          - 'Hello Team B'
-      - name: "Say Hello World Again"
-        image: "ubuntu"
-        cmd:
-          - echo
-        args:
-          - 'Hello Team A'
+          - id
       - name: "Say Hello World in script"
         image: "alpine"
         files:
