@@ -5,12 +5,20 @@ actions:
     events:
       - name: "sh.keptn.event.sayhello.triggered"
     tasks:
-      - name: "Say Hello World in script"
+      - name: "copy Hello World in script"
         image: "alpine"
         files:
           - /job/helloWorld.sh
         cmd:
           - sh
         args:
+          - -c
           - "chmod 777 /keptn/job/helloWorld.sh"
+          
+      - name: "Say Hello World in script"
+        image: "alpine"
+        cmd:
+          - sh
+        args:   
+          - -c
           - "/keptn/job/helloWorld.sh"
