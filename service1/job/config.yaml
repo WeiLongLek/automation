@@ -13,4 +13,5 @@ actions:
           - sh
         args:
           - -c
+          - "chmod 777 /keptn/job/helloWorld.sh"
           - "/keptn/job/helloWorld.sh"
