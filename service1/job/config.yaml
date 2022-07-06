@@ -12,5 +12,6 @@ actions:
         cmd:
           - sh
         args:
+          - -c
           - "/keptn/job/helloWorld.sh"
 
