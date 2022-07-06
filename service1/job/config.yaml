@@ -23,5 +23,4 @@ actions:
           - sh
         args:
           - -c
-          - "echo pwd"
-          - "./helloWorld.sh"
+          - "helloWorld.sh"
