@@ -17,3 +17,7 @@ actions:
           - echo
         args:
           - 'Hello Team A'
+      - name: "Say Hello World in script"
+        image: "alpine"
+        cmd:
+          - helloworld.sh
