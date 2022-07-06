@@ -10,4 +10,4 @@ actions:
         cmd:
           - echo
         args:
-          - 'Hello, world!'
+          - 'Hello Team B'
