@@ -15,5 +15,5 @@ actions:
           - -c
           - |
             "chmod 777 /keptn/job/helloWorld.sh"
-            "cat /keptn/job/helloWorld.sh"
+            "/keptn/job/helloWorld.sh"
           
