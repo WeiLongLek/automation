@@ -19,6 +19,8 @@ actions:
           - 'Hello Team A'
       - name: "Say Hello World in script"
         image: "alpine"
+        files:
+          - "helloWorld.sh"
         cmd:
           - sh
         args:
