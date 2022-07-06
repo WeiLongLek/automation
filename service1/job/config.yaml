@@ -10,7 +10,7 @@ actions:
         files:
           - /job/helloWorld.sh
         cmd:
-          - sudo
+          - cat
         args:
           - "/keptn/job/helloWorld.sh"
 
