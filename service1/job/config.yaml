@@ -14,13 +14,6 @@ actions:
         args:
           - -c
           - |
-          - "chmod 777 /keptn/job/helloWorld.sh"
-          - "/keptn/job/helloWorld.sh"
+            "chmod 777 /keptn/job/helloWorld.sh"
+            "/keptn/job/helloWorld.sh"
           
-      - name: "Say Hello World in script"
-        image: "alpine"
-        cmd:
-          - sh
-        args:   
-          - -c
-          - "/keptn/job/helloWorld.sh"
