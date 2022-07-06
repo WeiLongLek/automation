@@ -12,7 +12,7 @@ actions:
         args:
           - 'Hello Team B'
       - name: "Say Hello World Again"
-        image: "alpine"
+        image: "ubuntu"
         cmd:
           - echo
         args:
