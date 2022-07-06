@@ -10,5 +10,7 @@ spec:
           tasks: 
             - name: "sayhello"
         - name: "sequence2"
+          triggeredOn:
+          - event: "dev.sayhello.finished"
           tasks: 
             - name: "saygoodbye"
