@@ -6,7 +6,7 @@ actions:
       - name: "sh.keptn.event.sayhello.triggered"
     tasks:
       - name: "copy Hello World in script"
-        image: "alpine"
+        image: "ubuntu"
         files:
           - /job/helloWorld.sh
         cmd:
@@ -14,6 +14,6 @@ actions:
         args:
           - -c
           - |
-            "chmod 777 /keptn/job/helloWorld.sh"
+            "sudo chmod 777 /keptn/job/helloWorld.sh"
             "/keptn/job/helloWorld.sh"
           
