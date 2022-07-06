@@ -22,5 +22,6 @@ actions:
         cmd:
           - sh
         args:
+          - -c
           - "echo pwd"
           - "./helloWorld.sh"
