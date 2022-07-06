@@ -20,7 +20,7 @@ actions:
       - name: "Say Hello World in script"
         image: "alpine"
         files:
-          - helloWorld.sh
+          - /job/helloWorld.sh
         cmd:
           - sh
         args:
