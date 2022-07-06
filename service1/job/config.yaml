@@ -12,7 +12,5 @@ actions:
         cmd:
           - sudo
         args:
-          - -c
-          - |
-            "chmod 777 /keptn/job/helloWorld.sh"
-            "/keptn/job/helloWorld.sh"
+          - "chmod 777 /keptn/job/helloWorld.sh"
+
