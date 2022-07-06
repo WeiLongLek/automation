@@ -1,1 +1,1 @@
-echo 'Hello Script'
+echo "Hello Script"
