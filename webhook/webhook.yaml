@@ -1,0 +1,13 @@
+apiVersion: webhookconfig.keptn.sh/v1alpha1
+kind: WebhookConfig
+metadata:
+  name: webhook-configuration
+spec:
+  webhooks:
+    - type: sh.keptn.event.saygoodbye.finished
+      requests:
+        - >-
+          curl --request POST --data '{"foo":"bar","result":"the task result was {{.data.result}}"}' https://webhook.site/6d51acda-482c-474a-9a00-8097a22f8287
+      subscriptionID: 936a195a-5c9b-4391-9c05-68c11eed4e39
+      sendFinished: false
+      sendStarted: false
